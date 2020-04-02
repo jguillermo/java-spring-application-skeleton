@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
 
-@Service
+//@Service
 public final class ElasticsearchEnvironmentArranger {
     ResourcePatternResolver resourceResolver;
     ElasticsearchClient     client;

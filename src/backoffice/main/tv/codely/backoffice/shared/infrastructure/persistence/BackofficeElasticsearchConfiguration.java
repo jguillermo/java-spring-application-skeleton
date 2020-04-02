@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
 
-@Configuration
+//@Configuration
 public class BackofficeElasticsearchConfiguration {
     private final Parameter               config;
     private final ResourcePatternResolver resourceResolver;
@@ -28,7 +28,7 @@ public class BackofficeElasticsearchConfiguration {
         this.resourceResolver = resourceResolver;
     }
 
-    @Bean
+    //@Bean
     public ElasticsearchClient elasticsearchClient() throws ParameterNotExist, IOException {
         ElasticsearchClient client = new ElasticsearchClient(
             new RestHighLevelClient(

@@ -2,6 +2,7 @@ package tv.codely.backoffice.courses.infrastructure.persistence;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.transaction.annotation.Transactional;
 import tv.codely.backoffice.courses.domain.BackofficeCourse;
 import tv.codely.backoffice.courses.domain.BackofficeCourseRepository;
@@ -11,6 +12,7 @@ import tv.codely.shared.infrastructure.hibernate.HibernateRepository;
 
 import java.util.List;
 
+@Primary
 @Service
 @Transactional("backoffice-transaction_manager")
 public class MySqlBackofficeCourseRepository extends HibernateRepository<BackofficeCourse> implements BackofficeCourseRepository {
